@@ -236,3 +236,66 @@ function percsMapping(x, y) {
 
   return control;
 }
+
+function trvMapping() {
+  const coords = {
+    // pitch
+    "50 25": { alias: "freq" },
+    "100 25": { alias: "depth" },
+    "150 25": { alias: "shape" },
+    "200 25": { alias: "symmetry" },
+
+    // knobs
+    "325 50": { alias: "start" },
+    "600 50": { alias: "smooth" },
+
+    "488 25": { alias: "size" },
+
+    // resonator
+    "775 25": { alias: "delay" },
+    "825 25": { alias: "feedback" },
+    "875 25": { alias: "detune" },
+    "925 25": { alias: "resonance" },
+
+    // gate envelope
+    "50 250": { alias: "attack" },
+    "100 250": { alias: "decay" },
+    "150 250": { alias: "sustain" },
+    "200 250": { alias: "release" },
+
+    // gate generator
+    "200 250": { alias: "rate" },
+    "250 250": { alias: "inertia" },
+    "300 250": { alias: "mix" },
+
+    // filter wet
+    "575 250": { alias: "wet_cut" },
+    "625 250": { alias: "wet_res" },
+    "675 250": { alias: "wet_hplp" },
+
+    // filter dry
+    "775 250": { alias: "dry_cut" },
+    "825 250": { alias: "dry_res" },
+    "875 250": { alias: "dry_hplp" },
+    "925 250": { alias: "dry_gain" },
+
+    // diffuser chorus
+    "50 475": { alias: "delay" },
+    "150 475": { alias: "mod" },
+    "250 475": { alias: "speed" },
+    "350 475": { alias: "diffusion" },
+    "50 575": { alias: "bass" },
+    "150 575": { alias: "high" },
+    "250 575": { alias: "stereo" },
+    "350 575": { alias: "mix" },
+    
+    // phaser
+
+    // gain
+
+    // program change
+
+    // sample select
+
+  };
+}
