@@ -1,4 +1,4 @@
-const getXY = ($node, $) => {
+const getXY = ($node, $, force) => {
   const n = $node.attr("type");
   const x = $node.attr("y");
 
@@ -11,7 +11,7 @@ const getXY = ($node, $) => {
     "base64"
   );
   // console.log(`tabpage ${tabName}, ${x} ${y} ${n}`);
-  if (x % 5 !== 0 || y % 5 !== 0) {
+  if (!force && (x % 5 !== 0 || y % 5 !== 0)) {
     // errors.push(`tabpage ${tabName}, ${x} ${y} ${n} incorrect position, should be divided by 5`);
     errors.push(
       `tabpage ${tabName}, ${x} ${y} ${n} incorrect position, should be divided by 5`
@@ -97,64 +97,101 @@ exports.arpNumberStrict = function arpNumberStrict(cc, pageId) {
 
 exports.sendsCtl = function sendsCtl($node) {};
 
-const initTravelr = () => {
-  return;
-};
-
 exports.travelrCtl = function travelrCtl($node, $) {
-  const { x, y, err } = getXY($node, $);
+  const { x, y, err } = getXY($node, $, true);
   if (err) {
     console.log("travelrCtl", err);
     return {};
   }
-  return travelrMapping(x, y);
+
+  return trvMapping($node, x, y);
 };
 
-function travelrMapping(x, y) {
+function trvMapping($node, x, y) {
+  const encode = (alias) => {
+    const result = Buffer.from(alias).toString("base64");
+    return result;
+  };
+
   const coords = {
-    // Pitch
-    "50 100": { cc: [21, 22], alias: "pitch_lfo", type: "xy" },
-    "200 100": { cc: 23, alias: "jitter", type: "fader" },
+    // pitch
+    "50 25": { alias: "/trv/pitch/freq" },
+    "100 25": { alias: "/trv/pitch/depth" },
+    "150 25": { alias: "/trv/pitch/shape" },
+    "200 25": { alias: "/trv/pitch/symmetry" },
 
-    // Position
-    "300 100": { cc: [24, 25], alias: "pos_lfo", type: "xy" },
-    "450 100": { cc: 26, alias: "pos_inertia", type: "fader" },
+    // knobs
+    "325 50": { alias: "/trv/sample/start" },
+    "600 50": { alias: "/trv/sample/smooth" },
 
-    // Harmony
-    "550 100": { cc: [27, 28], alias: "harm_sustain", type: "xy" },
-    "700 100": { cc: 29, alias: "harm_resonanse", type: "fader" },
+    "488 25": { alias: "/trv/sample/size" },
 
-    // Wave
-    "800 100": { cc: [30, 31], alias: "wave", type: "xy" },
+    // resonator
+    "775 25": { alias: "/trv/resonator/delay" },
+    "825 25": { alias: "/trv/resonator/feedback" },
+    "875 25": { alias: "/trv/resonator/detune" },
+    "925 25": { alias: "/trv/resonator/resonance" },
 
-    // Geiger Gate
-    "50 400": { cc: [32, 33], alias: "geiger", type: "xy" },
+    // gate envelope
+    "50 250": { alias: "/trv/gate/attack" },
+    "100 250": { alias: "/trv/gate/decay" },
+    "150 250": { alias: "/trv/gate/sustain" },
+    "200 250": { alias: "/trv/gate/release" },
 
-    // Echo
-    "300 400": { cc: [34, 35], alias: "echo_pichfb", type: "xy" },
-    "450 400": { cc: 36, alias: "echo_env", type: "fader" },
+    // gate generator
+    "300 250": { alias: "/trv/gate/rate" },
+    "350 250": { alias: "/trv/gate/inertia" },
+    "400 250": { alias: "/trv/gate/mix" },
 
-    // echo filter
-    "550 400": { cc: [37, 38], alias: "echo_hp", type: "xy" },
+    // filter wet
+    "575 250": { alias: "/trv/filter/wet/cut" },
+    "625 250": { alias: "/trv/filter/wet/res" },
+    "675 250": { alias: "/trv/filter/wet/hplp" },
 
-    // echo_stereo
-    "800 400": { cc: 39, alias: "echo_stereo", type: "fader" },
-    // echo filter
-    "900 400": { cc: 40, alias: "echo_mix", type: "fader" },
+    // filter dry
+    "775 250": { alias: "/trv/filter/dry/cut" },
+    "825 250": { alias: "/trv/filter/dry/res" },
+    "875 250": { alias: "/trv/filter/dry/hplp" },
+    "925 250": { alias: "/trv/filter/dry/gain" },
+
+    // diffuser chorus
+    "50 475": { alias: "/trv/chorus/delay" },
+    "150 475": { alias: "/trv/chorus/mod" },
+    "250 475": { alias: "/trv/chorus/speed" },
+    "350 475": { alias: "/trv/chorus/diffusion" },
+    "50 575": { alias: "/trv/chorus/bass" },
+    "150 575": { alias: "/trv/chorus/high" },
+    "250 575": { alias: "/trv/chorus/stereo" },
+    "350 575": { alias: "/trv/chorus/mix" },
+
+    // phaser
+    "600 475": { alias: "/trv/phaser/freq" },
+    "700 475": { alias: "/trv/phaser/depth" },
+    "800 475": { alias: "/trv/phaser/phase" },
+    "900 475": { alias: "/trv/phaser/center" },
+    "600 575": { alias: "/trv/phaser/mode" },
+    "700 575": { alias: "/trv/phaser/spread" },
+    "800 575": { alias: "/trv/phaser/feedback" },
+    "900 575": { alias: "/trv/phaser/mix" },
+
+    // gain
+    "460 500": { alias: "/trv/gain" },
+
+    // program change
+    "50 675": { alias: "/trv/program" },
+
+    // sample select
+    "575 675": { alias: "/trv/sample/select" },
   };
 
   const key = `${x} ${y}`;
-  // console.log(x, y, key)
-  const { type, alias, cc } = coords[key];
-  const control = { alias, type, chan: 8 };
-  if (Array.isArray(cc)) {
-    control.cc = cc[0];
-    control.midi_y = { chan: 8, cc: [cc[1]] };
+  const control = coords[key];
+  if (control) {
+    const { alias } = control;
+    $node.attr("osc_cs", encode(alias));
   } else {
-    control.cc = cc;
+    console.log('empty control')
   }
-
-  return control;
 }
 
 exports.percsCtl = function ($node, $, pageId) {
@@ -235,67 +272,4 @@ function percsMapping(x, y) {
   const control = { alias, type, chan: 7, cc };
 
   return control;
-}
-
-function trvMapping() {
-  const coords = {
-    // pitch
-    "50 25": { alias: "freq" },
-    "100 25": { alias: "depth" },
-    "150 25": { alias: "shape" },
-    "200 25": { alias: "symmetry" },
-
-    // knobs
-    "325 50": { alias: "start" },
-    "600 50": { alias: "smooth" },
-
-    "488 25": { alias: "size" },
-
-    // resonator
-    "775 25": { alias: "delay" },
-    "825 25": { alias: "feedback" },
-    "875 25": { alias: "detune" },
-    "925 25": { alias: "resonance" },
-
-    // gate envelope
-    "50 250": { alias: "attack" },
-    "100 250": { alias: "decay" },
-    "150 250": { alias: "sustain" },
-    "200 250": { alias: "release" },
-
-    // gate generator
-    "200 250": { alias: "rate" },
-    "250 250": { alias: "inertia" },
-    "300 250": { alias: "mix" },
-
-    // filter wet
-    "575 250": { alias: "wet_cut" },
-    "625 250": { alias: "wet_res" },
-    "675 250": { alias: "wet_hplp" },
-
-    // filter dry
-    "775 250": { alias: "dry_cut" },
-    "825 250": { alias: "dry_res" },
-    "875 250": { alias: "dry_hplp" },
-    "925 250": { alias: "dry_gain" },
-
-    // diffuser chorus
-    "50 475": { alias: "delay" },
-    "150 475": { alias: "mod" },
-    "250 475": { alias: "speed" },
-    "350 475": { alias: "diffusion" },
-    "50 575": { alias: "bass" },
-    "150 575": { alias: "high" },
-    "250 575": { alias: "stereo" },
-    "350 575": { alias: "mix" },
-    
-    // phaser
-
-    // gain
-
-    // program change
-
-    // sample select
-
-  };
 }

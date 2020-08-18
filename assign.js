@@ -98,42 +98,7 @@ $('tabpage').each((pageId, item) => {
     if (pageId === 9) {
         $(item).find('control').each((j, citem) => {
             const $node = $(citem);
-            const control = ctl.travelrCtl($node, $);
-            if (!control) {
-                throw new Error(`travelrCtl ERROR! type: ${$node.attr('type')}`)
-            }
-
-            const {
-                alias,
-                cc,
-                chan,
-                type,
-                midi_y,
-            } = control;
-
-            if (type === 'fader') {
-                $node.html(createMidi({
-                    uid: j,
-                    channel: chan,
-                    number: cc,
-                }));
-            } else if (type === 'xy') {
-                $node.html(createMidi({
-                    uid: j,
-                    channel: chan,
-                    number: cc,
-                    axis: 'y',
-                    id: 1
-
-                }));
-                $node.append(createMidi({
-                    uid: j + 0.5,
-                    channel: midi_y.chan,
-                    number: midi_y.cc,
-                    axis: 'x',
-                    id: 1
-                }))
-            }
+            ctl.travelrCtl($node, $);            
         });
     }
 
