@@ -1233,8 +1233,8 @@
             <control name="ZmFkZXIxMjI3" x="553" y="50" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9waXRjaC9mcmVx" type="faderh" response="absolute" inverted="false" centered="false"/>
             <control name="ZmFkZXIxMjI4" x="553" y="200" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9waXRjaC9zeW1tZXRyeQ==" type="faderh" response="absolute" inverted="false" centered="false"/>
             <control name="ZmFkZXIxMjI5" x="553" y="150" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9waXRjaC9zaGFwZQ==" type="faderh" response="absolute" inverted="false" centered="false"/>
-            <control name="ZmFkZXIxMjMw" x="553" y="825" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9yZXNvbmF0b3IvZmVlZGJhY2s=" type="faderh" response="absolute" inverted="false" centered="false"/>
-            <control name="ZmFkZXIxMjMx" x="553" y="775" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9yZXNvbmF0b3IvZGVsYXk=" type="faderh" response="absolute" inverted="false" centered="false"/>
+            <control name="ZmFkZXIxMjMw" x="553" y="825" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9yZXNvbmF0b3IvZGFtcA==" type="faderh" response="absolute" inverted="false" centered="false"/>
+            <control name="ZmFkZXIxMjMx" x="553" y="775" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9yZXNvbmF0b3IvZGVjYXk=" type="faderh" response="absolute" inverted="false" centered="false"/>
             <control name="ZmFkZXIxMjMy" x="553" y="925" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9yZXNvbmF0b3IvcmVzb25hbmNl" type="faderh" response="absolute" inverted="false" centered="false"/>
             <control name="ZmFkZXIxMjMz" x="553" y="875" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9yZXNvbmF0b3IvZGV0dW5l" type="faderh" response="absolute" inverted="false" centered="false"/>
             <control name="ZmFkZXIxMjM0" x="328" y="625" w="150" h="50" color="purple" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9maWx0ZXIvd2V0L3Jlcw==" type="faderh" response="absolute" inverted="false" centered="false"/>
@@ -1245,10 +1245,10 @@
             <control name="ZmFkZXIxMjM5" x="328" y="925" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9maWx0ZXIvZHJ5L2dhaW4=" type="faderh" response="absolute" inverted="false" centered="false"/>
             <control name="ZmFkZXIxMjQw" x="328" y="875" w="150" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9maWx0ZXIvZHJ5L2hwbHA=" type="faderh" response="absolute" inverted="false" centered="false"/>
             <control name="ZmFkZXIxMjQx" x="328" y="488" w="375" h="50" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9zYW1wbGUvc2l6ZQ==" type="faderh" response="absolute" inverted="false" centered="false"/>
-            <control name="cm90YXJ5MzY0" x="578" y="325" w="100" h="100" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9zYW1wbGUvc3RhcnQ=" type="rotaryh" response="absolute" inverted="false" centered="false" norollover="true"/>
+            <control name="cm90YXJ5MzY0" x="578" y="325" w="100" h="100" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9zYW1wbGUvcG9zaXRpb24=" type="rotaryh" response="absolute" inverted="false" centered="false" norollover="true"/>
             <control name="cm90YXJ5MzY1" x="578" y="600" w="100" h="100" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9zYW1wbGUvc21vb3Ro" type="rotaryh" response="absolute" inverted="false" centered="false" norollover="true"/>
             <control name="ZmFkZXIxMjQy" x="3" y="575" w="50" h="400" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9zYW1wbGUvc2VsZWN0" type="faderv" response="absolute" inverted="false" centered="false"/>
-            <control name="bGFiZWw0MDM5" x="545" y="332" w="26" h="80" color="orange" type="labelv" text="U3RhcnQ=" size="14" background="true" outline="false"/>
+            <control name="bGFiZWw0MDM5" x="545" y="332" w="26" h="80" color="orange" type="labelv" text="UG9zaXRpb24=" size="14" background="true" outline="false"/>
             <control name="bGFiZWw0MDQw" x="544" y="611" w="26" h="80" color="orange" type="labelv" text="c21vb3Ro" size="14" background="true" outline="false"/>
         </tabpage>
         <tabpage name="MTI=" scalef="0.0" scalet="1.0" li_t="TUlYRVI=" li_c="blue" li_s="14" li_o="true" li_b="false" la_t="TUlYRVI=" la_c="blue" la_s="14" la_o="true" la_b="false">

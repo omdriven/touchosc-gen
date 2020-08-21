@@ -121,14 +121,14 @@ function trvMapping($node, x, y) {
     "200 25": { alias: "/trv/pitch/symmetry" },
 
     // knobs
-    "325 50": { alias: "/trv/sample/start" },
+    "325 50": { alias: "/trv/sample/position" },
     "600 50": { alias: "/trv/sample/smooth" },
 
     "488 25": { alias: "/trv/sample/size" },
 
     // resonator
-    "775 25": { alias: "/trv/resonator/delay" },
-    "825 25": { alias: "/trv/resonator/feedback" },
+    "775 25": { alias: "/trv/resonator/decay" },
+    "825 25": { alias: "/trv/resonator/damp" },
     "875 25": { alias: "/trv/resonator/detune" },
     "925 25": { alias: "/trv/resonator/resonance" },
 
@@ -146,12 +146,12 @@ function trvMapping($node, x, y) {
     // filter wet
     "575 250": { alias: "/trv/filter/wet/cut" },
     "625 250": { alias: "/trv/filter/wet/res" },
-    "675 250": { alias: "/trv/filter/wet/hplp" },
+    "675 250": { alias: "/trv/filter/wet/lphp" },
 
     // filter dry
     "775 250": { alias: "/trv/filter/dry/cut" },
     "825 250": { alias: "/trv/filter/dry/res" },
-    "875 250": { alias: "/trv/filter/dry/hplp" },
+    "875 250": { alias: "/trv/filter/dry/lphp" },
     "925 250": { alias: "/trv/filter/dry/gain" },
 
     // diffuser chorus
