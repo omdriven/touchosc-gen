@@ -175,7 +175,8 @@ function trvMapping($node, x, y) {
     "900 575": { alias: "/trv/phaser/mix" },
 
     // gain
-    "460 500": { alias: "/trv/gain" },
+    "460 570": { alias: "/trv/gain" },
+    "460 435": { alias: "/trv/resonator/fx" },
 
     // program change
     "50 675": { alias: "/trv/program" },
