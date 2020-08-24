@@ -1088,70 +1088,6 @@
             <control name="ZmFkZXIxMDU3" x="128" y="925" w="200" h="50" color="brown" scalef="0.0" scalet="1.0" type="faderh" response="absolute" inverted="false" centered="false">
                 <midi var="x" type="0" channel="7" data1="48" data2f="0" data2t="127" sysex=""/>
             </control>
-            <control name="bXVsdGl0b2dnbGU2NjE=" x="53" y="25" w="50" h="100" color="yellow" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="0" channel="7" data1="89" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="0" channel="7" data1="89" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NjI=" x="3" y="25" w="50" h="100" color="yellow" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="1" channel="7" data1="9" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="1" channel="7" data1="9" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NjQ=" x="53" y="150" w="50" h="100" color="red" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="0" channel="7" data1="90" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="0" channel="7" data1="90" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NjU=" x="3" y="150" w="50" h="100" color="red" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="1" channel="7" data1="10" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="1" channel="7" data1="10" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NjY=" x="53" y="275" w="50" h="100" color="green" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="0" channel="7" data1="91" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="0" channel="7" data1="91" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2Njc=" x="3" y="275" w="50" h="100" color="green" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="1" channel="7" data1="11" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="1" channel="7" data1="11" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2Njg=" x="53" y="400" w="50" h="100" color="blue" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="0" channel="7" data1="92" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="0" channel="7" data1="92" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2Njk=" x="3" y="400" w="50" h="100" color="blue" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="1" channel="7" data1="12" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="1" channel="7" data1="12" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NzA=" x="53" y="525" w="50" h="100" color="purple" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="0" channel="7" data1="93" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="0" channel="7" data1="93" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NzE=" x="3" y="525" w="50" h="100" color="purple" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="1" channel="7" data1="25" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="1" channel="7" data1="25" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NzI=" x="53" y="650" w="50" h="100" color="gray" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="0" channel="7" data1="94" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="0" channel="7" data1="94" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NzM=" x="3" y="650" w="50" h="100" color="gray" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="1" channel="7" data1="26" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="1" channel="7" data1="26" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NzQ=" x="53" y="775" w="50" h="100" color="orange" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="0" channel="7" data1="95" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="0" channel="7" data1="95" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NzU=" x="3" y="775" w="50" h="100" color="orange" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="1" channel="7" data1="27" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="1" channel="7" data1="27" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2NzY=" x="53" y="900" w="50" h="100" color="brown" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="0" channel="7" data1="96" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="0" channel="7" data1="96" data2f="127" data2t="127" sysex=""/>
-            </control>
-            <control name="bXVsdGl0b2dnbGU2Nzc=" x="3" y="900" w="50" h="100" color="brown" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="2" ex_mode="true" local_off="false">
-                <midi var="x1" type="1" channel="7" data1="28" data2f="0" data2t="0" sysex=""/>
-                <midi var="x2" type="1" channel="7" data1="28" data2f="127" data2t="127" sysex=""/>
-            </control>
             <control name="bGFiZWwzNDc5" x="603" y="150" w="100" h="100" color="red" type="labelv" text="MiBB" size="14" background="false" outline="false"/>
             <control name="bGFiZWwzNDgw" x="603" y="275" w="100" h="100" color="green" type="labelv" text="MyBB" size="14" background="false" outline="false"/>
             <control name="bGFiZWwzNDg3" x="478" y="150" w="100" h="100" color="red" type="labelv" text="MiBC" size="14" background="false" outline="false"/>
@@ -1161,6 +1097,70 @@
             <control name="bGFiZWwzNDk0" x="353" y="25" w="100" h="100" color="yellow" type="labelv" text="Um5k" size="14" background="false" outline="false"/>
             <control name="bGFiZWwzNDc4" x="603" y="25" w="100" h="100" color="yellow" type="labelv" text="MSBB" size="14" background="false" outline="false"/>
             <control name="bGFiZWwzNDg2" x="478" y="25" w="100" h="100" color="yellow" type="labelv" text="MSBC" size="14" background="false" outline="false"/>
+            <control name="ZmFkZXIxMjc1" x="53" y="25" w="50" h="100" color="yellow" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="0" channel="7" data1="89" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="0" channel="7" data1="89" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjc2" x="3" y="25" w="50" h="100" color="yellow" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="1" channel="7" data1="9" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="1" channel="7" data1="9" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjc3" x="53" y="150" w="50" h="100" color="red" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="0" channel="7" data1="90" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="0" channel="7" data1="90" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjc4" x="3" y="150" w="50" h="100" color="red" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="1" channel="7" data1="10" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="1" channel="7" data1="10" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjc5" x="53" y="275" w="50" h="100" color="green" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="0" channel="7" data1="91" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="0" channel="7" data1="91" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjgw" x="3" y="275" w="50" h="100" color="green" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="1" channel="7" data1="11" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="1" channel="7" data1="11" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjgx" x="53" y="400" w="50" h="100" color="blue" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="0" channel="7" data1="92" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="0" channel="7" data1="92" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjgy" x="3" y="400" w="50" h="100" color="blue" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="1" channel="7" data1="12" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="1" channel="7" data1="12" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjgz" x="53" y="525" w="50" h="100" color="purple" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="0" channel="7" data1="93" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="0" channel="7" data1="93" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjg0" x="3" y="525" w="50" h="100" color="purple" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="1" channel="7" data1="25" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="1" channel="7" data1="25" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjg1" x="53" y="650" w="50" h="100" color="gray" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="0" channel="7" data1="94" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="0" channel="7" data1="94" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjg2" x="3" y="650" w="50" h="100" color="gray" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="1" channel="7" data1="26" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="1" channel="7" data1="26" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjg3" x="53" y="775" w="50" h="100" color="orange" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="0" channel="7" data1="95" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="0" channel="7" data1="95" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjg4" x="3" y="775" w="50" h="100" color="orange" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="1" channel="7" data1="27" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="1" channel="7" data1="27" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjg5" x="53" y="900" w="50" h="100" color="brown" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="0" channel="7" data1="96" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="0" channel="7" data1="96" data2f="127" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjkw" x="3" y="900" w="50" h="100" color="brown" scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false" centered="false" ex_mode="true">
+                <midi var="x1" type="1" channel="7" data1="28" data2f="0" data2t="0" sysex=""/>
+                <midi var="x2" type="1" channel="7" data1="28" data2f="127" data2t="127" sysex=""/>
+            </control>
         </tabpage>
         <tabpage name="MTE=" scalef="0.0" scalet="1.0" li_t="VHJ2" li_c="purple" li_s="17" li_o="true" li_b="false" la_t="VHJ2" la_c="purple" la_s="17" la_o="true" la_b="false">
             <control name="bXVsdGl0b2dnbGU3MzE=" x="3" y="50" w="50" h="400" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9wcm9ncmFt" type="multitoggle" number_x="1" number_y="12" ex_mode="true" local_off="false"/>
@@ -1287,7 +1287,72 @@
             <control name="bGFiZWwxOTY0" x="528" y="650" w="50" h="50" color="blue" type="labelv" text="NA==" size="17" background="true" outline="false"/>
             <control name="bGFiZWwxOTY1" x="528" y="550" w="50" h="50" color="blue" type="labelv" text="Mw==" size="17" background="true" outline="false"/>
         </tabpage>
-        <tabpage name="c3ltbWV0cnk=" scalef="0.0" scalet="1.0" li_t="VHJ2" li_c="gray" li_s="14" li_o="true" li_b="true" la_t="VHJ2" la_c="gray" la_s="14" la_o="true" la_b="true"/>
+        <tabpage name="c3ltbWV0cnk=" scalef="0.0" scalet="1.0" li_t="VHJ2" li_c="gray" li_s="14" li_o="true" li_b="true" la_t="VHJ2" la_c="gray" la_s="14" la_o="true" la_b="true">
+            <control name="ZmFkZXIxMjY4" x="578" y="50" w="100" h="500" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9zYW1wbGUvc2VsZWN0" type="faderv" response="absolute" inverted="true" centered="false"/>
+            <control name="bGFiZWw0MTA1" x="578" y="50" w="100" h="50" color="orange" type="labelv" text="MQ==" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTA2" x="578" y="100" w="100" h="50" color="orange" type="labelv" text="My80" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTA3" x="578" y="150" w="100" h="50" color="orange" type="labelv" text="LzI=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTA4" x="578" y="200" w="100" h="50" color="orange" type="labelv" text="LzM=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTA5" x="578" y="250" w="100" h="50" color="orange" type="labelv" text="LzQ=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTEw" x="578" y="300" w="100" h="50" color="orange" type="labelv" text="LzY=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTEx" x="578" y="350" w="100" h="50" color="orange" type="labelv" text="Lzg=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTEy" x="578" y="400" w="100" h="50" color="orange" type="labelv" text="LzEy" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTEz" x="578" y="450" w="100" h="50" color="orange" type="labelv" text="LzE2" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTE0" x="578" y="500" w="100" h="50" color="orange" type="labelv" text="LzMy" size="14" background="false" outline="true"/>
+            <control name="ZmFkZXIxMjY5" x="423" y="47" w="100" h="500" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9zYW1wbGUvc2VsZWN0" type="faderv" response="absolute" inverted="true" centered="false"/>
+            <control name="bGFiZWw0MTE1" x="423" y="47" w="100" h="50" color="orange" type="labelv" text="MQ==" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTE2" x="423" y="97" w="100" h="50" color="orange" type="labelv" text="My80" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTE3" x="423" y="147" w="100" h="50" color="orange" type="labelv" text="LzI=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTE4" x="423" y="197" w="100" h="50" color="orange" type="labelv" text="LzM=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTE5" x="423" y="247" w="100" h="50" color="orange" type="labelv" text="LzQ=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTIw" x="423" y="297" w="100" h="50" color="orange" type="labelv" text="LzY=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTIx" x="423" y="347" w="100" h="50" color="orange" type="labelv" text="Lzg=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTIy" x="423" y="397" w="100" h="50" color="orange" type="labelv" text="LzEy" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTIz" x="423" y="447" w="100" h="50" color="orange" type="labelv" text="LzE2" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTI0" x="423" y="497" w="100" h="50" color="orange" type="labelv" text="LzMy" size="14" background="false" outline="true"/>
+            <control name="ZmFkZXIxMjcw" x="267" y="47" w="100" h="500" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9zYW1wbGUvc2VsZWN0" type="faderv" response="absolute" inverted="true" centered="false"/>
+            <control name="bGFiZWw0MTI1" x="267" y="47" w="100" h="50" color="orange" type="labelv" text="MQ==" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTI2" x="267" y="97" w="100" h="50" color="orange" type="labelv" text="My80" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTI3" x="267" y="147" w="100" h="50" color="orange" type="labelv" text="LzI=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTI4" x="267" y="197" w="100" h="50" color="orange" type="labelv" text="LzM=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTI5" x="267" y="247" w="100" h="50" color="orange" type="labelv" text="LzQ=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTMw" x="267" y="297" w="100" h="50" color="orange" type="labelv" text="LzY=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTMx" x="267" y="347" w="100" h="50" color="orange" type="labelv" text="Lzg=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTMy" x="267" y="397" w="100" h="50" color="orange" type="labelv" text="LzEy" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTMz" x="267" y="447" w="100" h="50" color="orange" type="labelv" text="LzE2" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTM0" x="267" y="497" w="100" h="50" color="orange" type="labelv" text="LzMy" size="14" background="false" outline="true"/>
+            <control name="ZmFkZXIxMjcx" x="101" y="50" w="100" h="500" color="orange" scalef="0.0" scalet="1.0" osc_cs="L3Rydi9zYW1wbGUvc2VsZWN0" type="faderv" response="absolute" inverted="true" centered="false"/>
+            <control name="bGFiZWw0MTM1" x="101" y="50" w="100" h="50" color="orange" type="labelv" text="MQ==" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTM2" x="101" y="100" w="100" h="50" color="orange" type="labelv" text="My80" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTM3" x="101" y="150" w="100" h="50" color="orange" type="labelv" text="LzI=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTM4" x="101" y="200" w="100" h="50" color="orange" type="labelv" text="LzM=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTM5" x="101" y="250" w="100" h="50" color="orange" type="labelv" text="LzQ=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTQw" x="101" y="300" w="100" h="50" color="orange" type="labelv" text="LzY=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTQx" x="101" y="350" w="100" h="50" color="orange" type="labelv" text="Lzg=" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTQy" x="101" y="400" w="100" h="50" color="orange" type="labelv" text="LzEy" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTQz" x="101" y="450" w="100" h="50" color="orange" type="labelv" text="LzE2" size="14" background="false" outline="true"/>
+            <control name="bGFiZWw0MTQ0" x="101" y="500" w="100" h="50" color="orange" type="labelv" text="LzMy" size="14" background="false" outline="true"/>
+            <control name="cm90YXJ5Mzg3" x="574" y="737" w="100" h="100" color="orange" scalef="0.0" scalet="1.0" type="rotaryh" response="absolute" inverted="false" centered="false" norollover="true">
+                <midi var="x" type="0" channel="11" data1="96" data2f="0" data2t="127" sysex=""/>
+            </control>
+            <control name="bGFiZWw0MTQ1" x="574" y="737" w="100" h="100" color="orange" type="labelv" text="Um5k" size="14" background="false" outline="false"/>
+            <control name="bGFiZWw0MTQ2" x="524" y="787" w="50" h="50" color="orange" type="labelv" text="eA==" size="14" background="true" outline="false"/>
+            <control name="bGFiZWw0MTQ3" x="524" y="737" w="50" h="50" color="orange" type="labelv" text="Kw==" size="14" background="true" outline="false"/>
+            <control name="ZmFkZXIxMjcy" x="324" y="737" w="200" h="50" color="orange" scalef="0.0" scalet="1.0" type="faderh" response="absolute" inverted="false" centered="false">
+                <midi var="x" type="0" channel="11" data1="97" data2f="0" data2t="127" sysex=""/>
+            </control>
+            <control name="ZmFkZXIxMjcz" x="324" y="787" w="200" h="50" color="orange" scalef="0.0" scalet="1.0" type="faderh" response="absolute" inverted="false" centered="false">
+                <midi var="x" type="0" channel="11" data1="98" data2f="0" data2t="127" sysex=""/>
+            </control>
+            <control name="cm90YXJ5Mzg4" x="108" y="708" w="150" h="150" color="orange" scalef="0.0" scalet="1.0" type="rotaryh" response="absolute" inverted="false" centered="false" norollover="true">
+                <midi var="x" type="0" channel="11" data1="99" data2f="0" data2t="127" sysex=""/>
+            </control>
+            <control name="bGFiZWw0MTQ4" x="108" y="708" w="149" h="150" color="orange" type="labelv" text="Um5kcm9w" size="14" background="false" outline="false"/>
+            <control name="bGFiZWw0MTQ5" x="640" y="924" w="50" h="50" color="orange" type="labelv" text="R2Fpbg==" size="17" background="true" outline="false"/>
+            <control name="ZmFkZXIxMjc0" x="440" y="924" w="200" h="50" color="orange" scalef="0.0" scalet="1.0" type="faderh" response="absolute" inverted="false" centered="false">
+                <midi var="x" type="0" channel="13" data1="83" data2f="0" data2t="127" sysex=""/>
+            </control>
+        </tabpage>
         <tabpage name="MTM=" scalef="0.0" scalet="1.0" li_t="VHIjMg==" li_c="gray" li_s="14" li_o="false" li_b="false" la_t="VHIjMg==" la_c="gray" la_s="14" la_o="false" la_b="false">
             <control name="bXVsdGl0b2dnbGU3Mjk=" x="628" y="50" w="50" h="600" color="gray" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="12" ex_mode="false" local_off="false"/>
             <control name="bXVsdGl0b2dnbGU3MzA=" x="528" y="50" w="50" h="600" color="gray" scalef="0.0" scalet="1.0" type="multitoggle" number_x="1" number_y="12" ex_mode="false" local_off="false"/>
