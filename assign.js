@@ -191,7 +191,6 @@ $('tabpage').each((pageId, item) => {
                     id: 1
                 }))
             }
-
         });
         return;
     }

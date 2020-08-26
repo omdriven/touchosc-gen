@@ -32,8 +32,44 @@ exports.arpCtl = function arpCtl($node, $, pageId) {
     console.log("arpCtl", err);
     return {};
   }
-  return arpMapping(x, y, pageId);
+  return eocMapping(x, y, pageId, $node);
 };
+
+function eocMapping(x, y, pageId, $node) {
+  const encode = (alias) => {
+    const result = Buffer.from(alias);
+    console.log(alias, result.toString("base64"));
+    return result.toString("base64");
+  };
+
+  const coords = {
+    '50 50': {alias: `/euc/${pageId}/steps`, type: 'multitoggle-osc'},
+    '50 200': {alias: `/euc/${pageId}/speed`, type: 'multitoggle-osc'},
+    '50 350': {alias: `/euc/${pageId}/fill`, type: 'multitoggle-osc'},
+    '50 500': {alias: `/euc/${pageId}/shift`, type: 'multitoggle-osc'},
+    '650 250': {alias: `/euc/${pageId}/duration`},
+    "750 100": { alias: "rnd", chan: 11, cc: 6, type: "fader" },
+    "750 250": { alias: "scale_choice", chan: 11, cc: 7, type: "fader" },
+    "800 250": { alias: "scale_scale", chan: 11, cc: 8, type: "fader" },
+    "725 500": { alias: "drop", chan: 11, cc: 9, type: "fader" },
+    "900 250": { alias: "gain", chan: 10, cc: 8, type: "fader" },
+  }
+  const key = `${x} ${y}`
+  const control = coords[key];
+  if (control) {
+    const { alias, type } = control;
+    if (alias.startsWith('/')) {
+      $node.attr("osc_cs", encode(alias));
+      if (type === 'multitoggle-osc') {
+        $node.attr('ex_mode', 'true');
+      }
+    }
+  } else {
+    console.log('empty control')
+  }
+
+  return control;
+}
 
 /*
 start controls from 21:
