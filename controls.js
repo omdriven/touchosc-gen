@@ -38,7 +38,6 @@ exports.arpCtl = function arpCtl($node, $, pageId) {
 function eocMapping(x, y, pageId, $node) {
   const encode = (alias) => {
     const result = Buffer.from(alias);
-    console.log(alias, result.toString("base64"));
     return result.toString("base64");
   };
 
@@ -182,12 +181,12 @@ function trvMapping($node, x, y) {
     // filter wet
     "575 250": { alias: "/trv/filter/wet/cut" },
     "625 250": { alias: "/trv/filter/wet/res" },
-    "675 250": { alias: "/trv/filter/wet/hplp" },
+    "675 250": { alias: "/trv/filter/wet/lphp" },
 
     // filter dry
     "775 250": { alias: "/trv/filter/dry/cut" },
     "825 250": { alias: "/trv/filter/dry/res" },
-    "875 250": { alias: "/trv/filter/dry/hplp" },
+    "875 250": { alias: "/trv/filter/dry/lphp" },
     "925 250": { alias: "/trv/filter/dry/gain" },
 
     // diffuser chorus
